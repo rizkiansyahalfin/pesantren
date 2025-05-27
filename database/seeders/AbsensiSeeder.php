@@ -13,6 +13,7 @@ class AbsensiSeeder extends Seeder
      */
     public function run(): void
     {
-        Absensi::factory()->count(1000)->create();
+        // Absensi::factory()->count(1000)->create(); // LAMA PROSES SEEDINGNYA
+        Absensi::factory()->count(30)->create();
     }
 }

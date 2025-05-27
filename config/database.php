@@ -49,7 +49,7 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => env('DB_CHARSET', 'utf8mb4'),
-            'collation' => env('DB_COLLATION', 'utf8mb4_0900_ai_ci'),
+            // 'collation' => env('DB_COLLATION', 'utf8mb4_0900_ai_ci'), // Jangan pakai utf8mb4_0900_ai_ci karena itu hanya tersedia di MySQL 8.x, bukan MariaDB.
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,

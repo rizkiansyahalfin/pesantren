@@ -16,6 +16,11 @@ class Santri extends Model
         'kamar_id',
         'kelas_id',
     ];
+
+    protected $casts = [
+        'tanggal_lahir' => 'date',
+    ];
+
     public function kamar()
     {
         return $this->belongsTo(Kamar::class);

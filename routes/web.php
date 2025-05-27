@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\SantriController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('santri');
 });
+
+Route::resource('santri', SantriController::class);
